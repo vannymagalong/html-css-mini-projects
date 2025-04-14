@@ -555,7 +555,7 @@ https://uifaces.co
 .cta-img-box {
   background-image: 
     linear-gradient(rgba(235,152,78,0.2), rgba(230,126,34,0.2)),
-    url("/01-omnifood/img/eating.jpg");
+    url("../../01-omnifood/img/eating.jpg");
   background-size: cover;
   background-position: center;
 }
