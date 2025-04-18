@@ -14,3 +14,4 @@ This is a personal challenge to improve layout skills, practice styling techniqu
 | Project Name              | Output                                                         |
 | ------------------------- | -------------------------------------------------------------- |
 | 01 Omnifood               | ![Output](./01-omnifood/output.png)                            |
+| 02 Basic Form             | ![Output](./02-form/output.png)                                |

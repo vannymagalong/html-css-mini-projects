@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 - Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="container section-form">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h2 class="h2">Sign up to be a wholesale partner</h2>
+                <p>Complete the form to sign up. We'll be in touch soon.</p>
+            </div>
+            <form class="form" action="POST">
+                <div class="form-field">
+                    <div class="field-group">
+                        <input id="company-name" type="text" name="company_name" placeholder=" ">
+                        <label for="company-name">Company Name</label></div>
+                    <p class="output-feedback">This field is required</p>
+                </div>
+    
+                <div class="form-field">
+                    <div class="field-group">
+                        <input id="company-url" type="url" name="company_url" placeholder=" ">
+                        <label for="company-url">Company URL</label>
+                    </div>
+                    <p class="output-feedback">This field is required</p>
+                </div>
+    
+                <div class="form-field">
+                    <div class="field-group">
+                        <input id="first-name" type="text" name="first_name" placeholder=" ">
+                        <label for="first-name">First Name</label>
+                    </div>
+                    <p class="output-feedback">This field is required</p>
+                </div>
+    
+                <div class="form-field">
+                    <div class="field-group">
+                        <input id="last-name" type="text" name="last_name" placeholder=" ">
+                        <label for="last-name">Last Name</label>
+                    </div>
+                    <p class="output-feedback">This field is required</p>
+                </div>
+    
+                <div class="form-field">
+                    <div class="field-group">
+                        <input id="email" type="email" name="email" placeholder=" ">
+                        <label for="email">Email</label>
+                    </div>
+                    <p class="output-feedback">This field is required</p>
+                </div>
+                
+                <div class="form-field">
+                    <div class="field-group">
+                        <input id="where" type="text" name="where" placeholder=" ">
+                        <label for="where">How did you hear from us?</label>
+                    </div>
+                    <p class="output-feedback">This field is required</p>
+                </div>
+
+                <button type="submit" class="btn btn--primary">
+                    <i class="fa fa-circle-o-notch fa-spin"></i> Submit
+                </button>
+            </form>
+        </div>
+    </section>
+    <script defer src="js/script.js"></script>
+</body>
+</html>
