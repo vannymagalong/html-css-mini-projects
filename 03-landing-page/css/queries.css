@@ -1,0 +1,46 @@
+@media (max-width: 75em) {
+    body {
+        overflow-y: scroll;
+    }
+
+    .h1 {
+        font-size: 4rem;
+    }
+
+    .text {
+        font-size: 1.25rem;
+    }
+
+
+    .text-box {
+        padding-left: 0;
+    }
+
+    .gallery-box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-item:last-child {
+        display: none;
+    }
+}
+
+/* BELOW 944px (tablets) */
+@media (max-width: 59rem) {
+    .h1 {
+        font-size: 3rem;
+    }
+
+    .text {
+        font-size: 1.125rem;
+    }
+
+    .header {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        font-size: 1.125rem;
+    }
+   
+}
