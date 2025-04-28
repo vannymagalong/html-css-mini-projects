@@ -1,0 +1,10 @@
+/* BELOW 944px (tablets) */
+@media (max-width: 59rem) {
+    .pricing-card-list {
+        flex-direction: column;
+    }
+
+    .pricing-card {
+        max-width: 32rem;
+    }
+}
