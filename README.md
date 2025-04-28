@@ -13,6 +13,7 @@ This is a personal challenge to improve layout skills, practice styling techniqu
 
 | Project Name              | Output                                                         |
 | ------------------------- | -------------------------------------------------------------- |
-| 01 Omnifood               | [Live Demo](https://vannymagalong.github.io/html-css-mini-projects/01-omnifood/)                            |
-| 02 Basic Form             | [Live Demo](https://vannymagalong.github.io/html-css-mini-projects/02-form/)                                |
-| 03 Landing Page           | [Live Demo](https://vannymagalong.github.io/html-css-mini-projects/03-landing-page/)                        |
+| 01 - Omnifood               | [Live Demo](https://vannymagalong.github.io/html-css-mini-projects/01-omnifood/)                            |
+| 02 - Basic Form             | [Live Demo](https://vannymagalong.github.io/html-css-mini-projects/02-form/)                                |
+| 03 - Landing Page           | [Live Demo](https://vannymagalong.github.io/html-css-mini-projects/03-landing-page/)                        |
+| 04 - Pricing Table          | [Live Demo](https://vannymagalong.github.io/html-css-mini-projects/04-pricing-table/)                       |
