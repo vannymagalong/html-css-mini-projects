@@ -17,3 +17,4 @@ This is a personal challenge to improve layout skills, practice styling techniqu
 | 02 - Basic Form             | [Live Demo](https://vannymagalong.github.io/html-css-mini-projects/02-form/)                                |
 | 03 - Landing Page           | [Live Demo](https://vannymagalong.github.io/html-css-mini-projects/03-landing-page/)                        |
 | 04 - Pricing Table          | [Live Demo](https://vannymagalong.github.io/html-css-mini-projects/04-pricing-table/)                       |
+| 05 - Calculator             | [Live Demo](https://vannymagalong.github.io/html-css-mini-projects/05-calculator-app/)                      |

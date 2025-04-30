@@ -1,0 +1,173 @@
+:root {
+    color-scheme: light dark;
+
+    --bg-color: #1E1E1E;
+
+    /* LIGHT */
+    --light-bg: #FFFFFF;
+    --light-button-wrap: #F5F5F5;
+    --light-text: #1E1E1E;
+    --light-btn-function: #00000012;
+    --light-btn-active: #00000033;
+
+    /* DARK */
+    --dark-bg: #212327;
+    --dark-button-wrap: #27292E;
+    --dark-text: #FFFFFF;
+    --dark-btn-function: #CCCDD712;
+    --dark-btn-active: #CCCDD733;
+}
+
+body {
+    transition: all 0.5s ease;
+    background-color: var(--bg-color);
+    color: light-dark(var(--light-text), var(--dark-text));
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.light {
+    color-scheme: light;
+
+    .btn {
+        &.btn-scheme {
+            &:before {
+                content: url("../img/light-icon.svg");
+                height: 27px;
+            }
+        }
+    }
+}
+
+.dark {
+    color-scheme: dark;
+
+    .btn {
+        &.btn-scheme {
+            &:before {
+                content: url("../img/dark-icon.svg");
+            }
+        }
+    }
+}
+
+.calculator {
+    background-color: light-dark(var(--light-bg), var(--dark-bg));
+    width: 24.375rem;
+    height: 50rem;
+    
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.status-bar {
+    height: 2.9375rem;
+}
+
+.display-wrapper {
+    height: 15.9375rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 2.5rem 2.6875rem;
+
+    .logs {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    input,
+    input:focus,
+    input:focus-visible {
+        border: none;
+        outline: none;
+        font-weight: 700;
+        font-size: 3rem;
+        text-align: right;
+        background-color: transparent;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+}
+
+.button-wrapper {
+    background-color: light-dark(var(--light-button-wrap), var(--dark-button-wrap));
+    height: 31.125rem;
+    border-radius: 28px 28px 0 0;
+    padding: 48px 43px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    .btn {
+        width: 64px;
+        height: 64px;
+        border: none;
+        background-color: transparent;
+        border-radius: 32px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+
+        &.btn-scheme {
+            background-color: transparent;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border: 2px solid light-dark(var(--light-btn-function), var(--dark-btn-function));
+        }
+
+        &.btn-function {
+            background-color: light-dark(var(--light-btn-function), var(--dark-btn-function));
+        }
+
+        &.text-gradient {
+            background: -webkit-linear-gradient(#ED0E98, #FE5A2D);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        &.btn-equal {
+            background: linear-gradient(#ED0E98, #FE5A2D);
+            grid-column: 4;
+            grid-row: 4 / 6; 
+            height: 144px;
+            color: #FFFFFF;
+        }
+
+        &:active {
+            background-color: light-dark(var(--light-btn-active), var(--dark-btn-active));
+        }
+    }
+}
+
+.home-indicator {
+    background-color: light-dark(var(--light-button-wrap), var(--dark-button-wrap));
+    height: 2.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .indicator {
+        background-color: #000000;
+        border-radius: 100px;
+        width: 8.375rem;
+        height: 0.25rem;
+    }
+}
