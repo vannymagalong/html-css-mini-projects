@@ -20,4 +20,4 @@ This is a personal challenge to improve layout skills, practice styling techniqu
 | 05 - Calculator             | [Live Demo](https://vannymagalong.github.io/html-css-mini-projects/05-calculator-app/)                      |
 
 
-TEst 1
+TEst 2
